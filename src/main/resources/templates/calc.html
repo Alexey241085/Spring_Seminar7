@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/calc_style.css" />
+  </head>
+
+  <body class="body">
+    <h1 class="text_headet">простой калькулятор</h1>
+
+    <table class="table">
+      <thead>
+        <tr class="tr">
+          <th scope="col" class="th">ДЕЙСТВИЕ</th>
+          <th scope="col" class="th">ЧИСЛО 1</th>
+          <th scope="col" class="th">ЧИСЛО 2</th>
+          <th scope="col" class="th">РЕЗУЛЬТАТ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="tr">
+          <th scope="row" class="th">+</th>
+          <td th:text="${num1}" class="td"></td>
+          <td th:text="${num2}" class="td"></td>
+          <td th:text="${res1}" class="td"></td>
+        </tr>
+        <tr class="tr">
+          <th scope="row" class="th">-</th>
+          <td th:text="${num1}" class="td"></td>
+          <td th:text="${num2}" class="td"></td>
+          <td th:text="${res2}" class="td"></td>
+        </tr>
+
+        <tr class="tr">
+          <th scope="row" class="th">/</th>
+          <td th:text="${num1}" class="td"></td>
+          <td th:text="${num2}" class="td"></td>
+          <td th:text="${res3}" class="td"></td>
+        </tr>
+
+        <tr class="tr">
+          <th scope="row" class="th">*</th>
+          <td th:text="${num1}" class="td"></td>
+          <td th:text="${num2}" class="td"></td>
+          <td th:text="${res4}" class="td"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <form action="/calc" method="post">
+      <div class="input_container">
+        <label class="label">
+          введите первое число
+          <input class="input" type="number" step="any" name="num1" /><br
+        /></label>
+
+        <label class="label">
+          введите второе число
+          <input class="input" type="number" step="any" name="num2" /><br
+        /></label>
+      </div>
+
+      <div class="btn_div">
+        <button class="button" type="submit">РАСЧИТАТЬ</button>
+      </div>
+    </form>
+  </body>
+</html>

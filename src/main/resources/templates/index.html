@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Главная</title>
+    <link rel="stylesheet" th:href="@{/css/index.css}" />
+  </head>
+  <body>
+    
+
+
+    <div class="heder_h2">
+      <h2 class="users">ПОЛЬЗОВАТЕЛИ</h2>
+    </div>
+
+    <div th:switch="${persons}">
+      <h2 th:case="null">No users found!</h2>
+      <div th:case="*">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="th">ID</th>
+              <th class="th">Name</th>
+              <th class="th">PASS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tr" th:each="user : ${persons}">
+              <td class="td" th:text="${user.id}"></td>
+              <td class="td" th:text="${user.name}"></td>
+              <td class="td" th:text="${user.pass}"></td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+
+      <div class="btn_div">
+        <a class="btn-primary" th:href ="@{/users/registr}"
+          ><img class="img_link" th:src="@{/images/Greenadd.png}" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <div class="logout">
+      <div class="div-logout">
+        <a href="#" th:href="@{/logout}">Log Out</a>
+      </div>
+    </div>
+   
+
+<!--    <h2>Login</h2>-->
+<!--    <form  th:action="@{/}" method="post">-->
+<!--      <div>-->
+<!--        <label for="username">Username:</label>-->
+<!--        <input type="text" id="username" name="username"/>-->
+<!--      </div>-->
+<!--      <div>-->
+<!--        <label for="password">Password:</label>-->
+<!--        <input type="password" id="password" name="password"/>-->
+<!--      </div>-->
+
+<!--&lt;!&ndash;      <button class="button" type="submit">отправить</button>&ndash;&gt;-->
+
+<!--          <input type="submit" value="Login"/>-->
+<!--      <a href="#" th:href="@{/logout}">Log Out</a>-->
+<!--    </form>-->
+
+
+  </body>
+</html>
+
+<!-- https://hrcode.su/javascript/kak-sozdat-dinamicheskuyu-tabliczu-v-html-s-pomoshhyu-javascript/?ysclid=lvsdmgzzk222687738 -->

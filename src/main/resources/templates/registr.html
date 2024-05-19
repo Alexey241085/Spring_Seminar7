@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration</title>
+    <link rel="stylesheet" th:href="@{/css/registr.css}" />
+  </head>
+  <body>
+    <div class="img_reg">
+      <img
+        src="https://sun9-77.userapi.com/impf/c636517/v636517947/5d846/EzDNRw58VeI.jpg?size=766x211&quality=96&sign=0ac7aaf258b3b66f4330ee561c6735ab&c_uniq_tag=wR_S1Vcm7_ckwgpBGaTusOVFu070OtH-99UxH7c9SRE&type=album"
+        alt=""
+      />
+    </div>
+
+    <form
+      action="#"
+      th:action="@{/users/registr}"
+      th:object="${person}"
+      th:method="post"
+    >
+      <div class="input_div">
+        <label class="label" for="nam">
+          <input
+            class="input"
+            type="text"
+            th:field="*{name}"
+            id="nam"
+            placeholder="введите имя"
+          /><br />
+        </label>
+        <label class="label" for="pass">
+          <input
+            class="input"
+            type="text"
+            th:field="*{pass}"
+            id="pass"
+            placeholder=" введите пароль"
+          /><br />
+        </label>
+      </div>
+
+      <div class="div_btn">
+        <button class="button" type="submit">отправить</button>
+      </div>
+    </form>
+
+  </body>
+</html>

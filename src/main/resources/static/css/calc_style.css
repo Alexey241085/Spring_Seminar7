@@ -1,0 +1,92 @@
+.body {
+  margin: 0;
+  padding: 0;
+  background-image: url("https://mykaleidoscope.ru/x/uploads/posts/2023-12/1702677572_mykaleidoscope-ru-p-krasivie-romashki-otkritki-vkontakte-4.jpg");
+  /* background-color: rgb(140, 175, 207); */
+  background-repeat: repeat space;
+  /* background-position: center; */
+}
+
+.text_headet {
+  text-align: center;
+
+  color: rgb(206, 208, 92);
+  font-size: 3em;
+  font-style: italic;
+}
+
+.table {
+  background-color: rgb(238, 239, 155);
+  border-spacing: 12px;
+  border-collapse: collapse;
+  border: 1px solid black;
+  width: 80%;
+  height: 250px;
+  text-align: center;
+  margin: auto;
+}
+
+.th {
+  height: 60px;
+  color: rgb(144, 0, 255);
+  font-size: 1.5em;
+  border: 1px solid rgb(204, 27, 27);
+}
+
+.td {
+  border: 1px solid rgb(204, 27, 27);
+  color: rgb(132, 26, 71);
+  font-size: 1.5em;
+}
+
+.tr:hover {
+  background-color: rgb(240, 232, 231);
+}
+
+.button {
+  width: 140px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  background-color: rgb(26, 210, 23);
+  border-radius: 15px;
+  font-size: 1.2em;
+  color: brown;
+}
+
+.input {
+  margin-left: 10px;
+  color: brown;
+  background-color: rgb(218, 222, 218);
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  font-size: 1.3em;
+  border-radius: 15px;
+}
+
+.label {
+  color: rgb(47, 40, 55);
+  font-size: 1.3em;
+}
+
+.btn_div {
+  display: flex;
+  justify-content: center;
+}
+
+.input_container {
+  width: 60%;
+  height: 80px;
+  background-color: rgb(227, 208, 184);
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  gap: 80px;
+}

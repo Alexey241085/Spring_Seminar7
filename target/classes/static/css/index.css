@@ -1,0 +1,82 @@
+body {
+  /* width: 1920px;
+    height: 1300px; */
+  background-color: rgb(224, 232, 232);
+  background-image: url("https://gas-kvas.com/grafic/uploads/posts/2023-09/1695826318_gas-kvas-com-p-kartinki-s-kotikami-16.jpg");
+}
+.img_link {
+  width: 100px;
+  height: 100px;
+}
+
+.users {
+  background-color: rgb(238, 239, 155);
+  border-width: 1;
+  border-color: rgb(144, 57, 57);
+  border-style: dotted;
+}
+
+.heder_h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(199, 16, 16);
+
+  margin-top: 70px;
+}
+
+.table {
+  border-width: 1;
+  border-color: rgb(181, 16, 16);
+  border-style: dotted;
+  background-color: rgb(238, 239, 155);
+  border-spacing: 12px;
+  border-collapse: collapse;
+  /* border: 1px solid black; */
+  width: 80%;
+  height: auto;
+  text-align: center;
+  margin: auto;
+}
+
+.th {
+  height: 30px;
+  color: rgb(144, 0, 255);
+  font-size: 1.5em;
+  border: 1px solid rgb(204, 27, 27);
+}
+
+.td {
+  border: 1px solid rgb(204, 27, 27);
+  color: rgb(132, 26, 71);
+  font-size: 1.5em;
+}
+
+.tr:hover {
+  background-color: rgb(240, 232, 231);
+}
+
+.btn_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.logout{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.div-logout {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: 100px;
+  height: 60px;
+  background-color: chocolate;
+}
+
+
